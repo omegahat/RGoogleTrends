@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<link rel="stylesheet" href="../OmegaTech.css">
+<title>@PKG_NAME@</title>
+</head>
+
+<body>
+<h1>@PKG_NAME@</h1>
+<p align=right><a href="@TAR_FILE@">@TAR_FILE@</a> (@DATE@)</p>
+
+This package provides programmatic access to Google Trends
+data. This is information about the popularity of a particular query.
+It provides information about how often the query
+has been made
+<ul>
+  <li> overall
+  <li> over time
+  <li> by region
+  <li> by city
+  <li> by language.
+</ul>
+
+<p>
+The package also provides a way to read cookies from Firefox
+by accessing the cookies.sqlite database.
+
+
+<h2>Documentation</h2>
+
+See the help pages for the functions and their examples.
+Basically, set the R option GooglePassword with
+<pre>
+ option(GooglePassword = c(login = "password"))
+</pre>
+Then use
+<pre>
+ ans = getGTrends("query term")
+</pre>
+
+
+
+<hr>
+<address><a href="http://www.stat.ucdavis.edu/~duncan">Duncan Temple Lang</a>
+<a href=mailto:duncan@wald.ucdavis.edu>&lt;duncan@wald.ucdavis.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sat Oct 17 14:42:55 PDT 2009
+<!-- hhmts end -->
+</body> </html>

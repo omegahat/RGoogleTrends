@@ -1,0 +1,9 @@
+Version 0.2-0
+
+  *  googleSignIn() works (cookie management) and so can avoid using Web browser
+     to login.
+
+  *  changed the parameters for getGTrends() to allow for a login-password pair
+     as well as a cookie or to get the cookies from Firefox.
+
+

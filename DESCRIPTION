@@ -1,0 +1,18 @@
+Package: RGoogleTrends
+Version: 0.2-1
+Title: Download Google Trends Data
+Description: Download Google Trends data for use in R.
+  This fetches the different data frames for a given query
+  that allow us to track the "popularity" of a given topic
+  by time, region, language.
+  This package also illustrates how to query "live" 
+  cookies from the Firefox browser using a trivial 
+  application of the RSQLite package.
+Author: Duncan Temple Lang
+Maintainer: Duncan Temple Lang <duncan@r-project.org>
+License: BSD
+Imports: RCurl, RSQLite, DBI
+Notes: Provides a 
+
+
+

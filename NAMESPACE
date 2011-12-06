@@ -1,0 +1,11 @@
+import(RCurl)
+import(RSQLite)
+import(DBI)
+
+export(getGTrends)
+export(googleSignIn)
+export(getFirefoxCookies)
+
+
+
+
