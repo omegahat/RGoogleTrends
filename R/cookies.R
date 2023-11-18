@@ -2,7 +2,6 @@ getGoogleCookies =
 function(cookieJar = findCookiesFile(), con = dbConnect(SQLite(), cookieJar))
 {
   sql = sprintf("SELECT * FROM moz_cookies WHERE host = '.google.com' AND expiry > %d", as.integer(Sys.time()))
-browser()    
   rs = dbSendQuery(con, sql)
   gtb = fetch(rs)
 
