@@ -3,7 +3,8 @@ getGTrends =
 # We should change this to use get
 #
 function(term, login = getOption("GooglePassword"), cookie = getGoogleCookies (), 
-          relativeScale = TRUE, curl = getCurlHandle(cookie = cookie), ...)
+          relativeScale = TRUE, curl = getCurlHandle(cookie = cookie),
+         url = "http://www.google.com/trends/explore", ...)
 {
 
   if(missing(curl)) {
@@ -13,7 +14,7 @@ function(term, login = getOption("GooglePassword"), cookie = getGoogleCookies ()
        cookie = paste(names(cookie), cookie, sep = "=", collapse = ";")
   }
   
-  txt = getForm("http://www.google.com/trends/viz",
+  txt = getForm(url,
                   q = term, graph = "all_csv",
                  scale = as.integer(relativeScale), sa= "N",
                  curl = curl, .opts = list(verbose = FALSE, ...))  # binary = TRUE)
